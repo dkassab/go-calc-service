@@ -2,9 +2,16 @@ syntax = "proto3";
 
 package calc;
 
+import "google/api/annotations.proto";
+
 service Calculator {
 
-rpc Add (AddRequest) returns (AddReply) {}
+rpc Add (AddRequest) returns (AddReply) {
+	  option (google.api.http) = {
+      post: "/v1/example/add/{value1}/{value2}"
+
+    };
+}
 rpc Subtract (SubtractRequest) returns (SubtractReply) {}
 rpc Multiply (MultiplyRequest) returns (MultiplyReply) {}
 rpc Divide (DivideRequest) returns (DivideReply) {}

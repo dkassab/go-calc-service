@@ -1,13 +1,13 @@
 package main
 
 import (
-	"log"
-	"net"
-
-	pb "github.com/dkassab/calc/calc"
+	"flag"
+	pb "github.com/dkassab/go-calc-service/calc"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
+	"log"
+	"net"
 )
 
 const (
@@ -38,7 +38,8 @@ func (s *calculatorServer) Divide(ctx context.Context, in *pb.DivideRequest) (*p
 }
 
 func main() {
-	lis, err := net.Listen("tcp", port)
+	flag.Parse()
+	lis, err := net.Listen("tcp", ":33333")
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
