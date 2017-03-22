@@ -1,0 +1,12 @@
+package: github.com/dkassab/go-calc-service/server
+import:
+- package: github.com/dkassab/go-calc-service
+  subpackages:
+  - calc
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: google.golang.org/grpc
+  version: ^1.0.5
+  subpackages:
+  - reflection
