@@ -1,0 +1,12 @@
+version: "2"
+services:
+  server:
+    image: dkassab/calc-go-server-image:latest
+    ports:
+      - "33333:33333"
+  rproxy:
+    image: dkassab/calc-go-rproxy-image:latest
+    ports:
+      - "8080:8080"
+    links:
+      - server
