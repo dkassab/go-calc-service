@@ -1,0 +1,49 @@
+hash: 2321a68ba53b6406cdefc1dd844ff14f45b2b1663aea3e582a156fd94375c06c
+updated: 2017-03-22T14:35:58.674374668-04:00
+imports:
+- name: github.com/dkassab/go-calc-service
+  version: 37e7ab0102156803d08b80015f3fae0674f5df25
+  subpackages:
+  - calc
+- name: github.com/gengo/grpc-gateway
+  version: 7980281cb6ac1dacf3f0025c53870c817c1c9511
+  subpackages:
+  - third_party/googleapis/google/api
+- name: github.com/golang/glog
+  version: 23def4e6c14b4da8ac2ed8007337bc5eb5007998
+- name: github.com/golang/protobuf
+  version: c9c7427a2a70d2eb3bafa0ab2dc163e45f143317
+  subpackages:
+  - jsonpb
+  - proto
+- name: github.com/grpc-ecosystem/grpc-gateway
+  version: a8f25bd1ab549f8b87afd48aa9181221e9d439bb
+  subpackages:
+  - runtime
+  - runtime/internal
+  - utilities
+- name: golang.org/x/net
+  version: a6577fac2d73be281a500b310739095313165611
+  subpackages:
+  - context
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - lex/httplex
+  - trace
+- name: google.golang.org/grpc
+  version: cdee119ee21e61eef7093a41ba148fa83585e143
+  subpackages:
+  - codes
+  - credentials
+  - grpclog
+  - internal
+  - keepalive
+  - metadata
+  - naming
+  - peer
+  - stats
+  - tap
+  - transport
+testImports: []
