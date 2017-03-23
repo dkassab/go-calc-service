@@ -1,11 +1,8 @@
 FROM golang:1.7
 
-RUN mkdir -p /go/src/app
-WORKDIR /go/src/app
-COPY . /vendor/github.com/gengo/grpc-gateway/third_party/googleapis/google/api
+WORKDIR /go/src/github.com/dkassab/go-calc-service/server
+COPY . .
 
-COPY . /go/src/app
+RUN go get -v
 
-RUN go install -v
-
-CMD ["app"]
+CMD ["server"]

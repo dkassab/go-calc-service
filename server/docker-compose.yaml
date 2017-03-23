@@ -1,0 +1,12 @@
+version: "2"
+services:
+  server:
+    image: go-calc-service-image:0.2
+    ports:
+      - "33333:33333"
+  rproxy:
+    image: go-calc-rproxy-image:0.1
+    ports:
+      - "8080:8080"
+    links:
+      - server
