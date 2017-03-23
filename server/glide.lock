@@ -1,5 +1,5 @@
-hash: 986e09c69ab1206952bdd1d6962efcdd113495988a61691f33df33f1c9bbe5ae
-updated: 2017-03-22T13:32:34.125398342-04:00
+hash: 4fcdd47e56b2cf93d7acf2ad11b2ea82c15d9a54d8a1ef8cd5465de33a08df20
+updated: 2017-03-23T13:39:54.667438858-04:00
 imports:
 - name: github.com/dkassab/go-calc-service
   version: 37e7ab0102156803d08b80015f3fae0674f5df25
@@ -16,7 +16,7 @@ imports:
   - proto
   - protoc-gen-go/descriptor
 - name: github.com/grpc-ecosystem/grpc-gateway
-  version: 7980281cb6ac1dacf3f0025c53870c817c1c9511
+  version: a8f25bd1ab549f8b87afd48aa9181221e9d439bb
   subpackages:
   - runtime
   - runtime/internal
