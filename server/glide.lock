@@ -1,12 +1,10 @@
-hash: fc81203b5898bc3ff5567952de860012d88c3d7c7d74e8c1675e74717164fc21
-updated: 2017-03-23T14:35:57.436785577-04:00
+hash: 4fcdd47e56b2cf93d7acf2ad11b2ea82c15d9a54d8a1ef8cd5465de33a08df20
+updated: 2017-03-23T14:47:52.681412647-04:00
 imports:
 - name: github.com/dkassab/go-calc-service
   version: 073bf539cd53e4f549a67236e43db2ab3e10b755
   subpackages:
   - calc
-- name: github.com/golang/glog
-  version: 23def4e6c14b4da8ac2ed8007337bc5eb5007998
 - name: github.com/golang/protobuf
   version: c9c7427a2a70d2eb3bafa0ab2dc163e45f143317
   subpackages:
