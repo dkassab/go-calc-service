@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: goingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    ingress.kubernetes.io/ssl-redirect: "false"
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: mydomain.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: rproxy
+          servicePort: 8080

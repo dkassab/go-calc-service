@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: server
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        service: server
+    spec:
+      containers:
+      - image: dkassab/calc-go-server-image:latest
+        name: server
+        ports:
+        - containerPort: 33333
+        resources: {}
+      restartPolicy: Always
+status: {}
